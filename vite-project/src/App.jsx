@@ -37,7 +37,9 @@ function App() {
             {ingredientArr.length >= 3 && (
               <Generate handleonclick={handleonclick}></Generate>
             )}
-            <ApiResponse textresponse={textresponse}></ApiResponse>
+            {textresponse && (
+              <ApiResponse textresponse={textresponse}></ApiResponse>
+            )}
           </div>
         </div>
       </center>
